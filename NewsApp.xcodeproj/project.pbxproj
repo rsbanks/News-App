@@ -13,6 +13,13 @@
 		3B4BE854248E717100D1CBE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BE852248E717100D1CBE1 /* Main.storyboard */; };
 		3B4BE856248E717300D1CBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BE855248E717300D1CBE1 /* Assets.xcassets */; };
 		3B4BE859248E717300D1CBE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BE857248E717300D1CBE1 /* LaunchScreen.storyboard */; };
+		3B4BE861248E719100D1CBE1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE860248E719100D1CBE1 /* Article.swift */; };
+		3B4BE863248E735E00D1CBE1 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE862248E735E00D1CBE1 /* ArticleService.swift */; };
+		3B4BE865248E73C200D1CBE1 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE864248E73C200D1CBE1 /* ArticleModel.swift */; };
+		3B4BE867248E8FB000D1CBE1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE866248E8FB000D1CBE1 /* DetailViewController.swift */; };
+		3B4BE869248EE40300D1CBE1 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE868248EE40300D1CBE1 /* ArticleCell.swift */; };
+		3B4BE86B248EFC6700D1CBE1 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE86A248EFC6700D1CBE1 /* CacheManager.swift */; };
+		3B4BE86E248F03A200D1CBE1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BE86D248F03A200D1CBE1 /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		3B4BE855248E717300D1CBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B4BE858248E717300D1CBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B4BE85A248E717300D1CBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4BE860248E719100D1CBE1 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		3B4BE862248E735E00D1CBE1 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		3B4BE864248E73C200D1CBE1 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		3B4BE866248E8FB000D1CBE1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3B4BE868248EE40300D1CBE1 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		3B4BE86A248EFC6700D1CBE1 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		3B4BE86D248F03A200D1CBE1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4BE86E248F03A200D1CBE1 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,7 @@
 			children = (
 				3B4BE84B248E717100D1CBE1 /* NewsApp */,
 				3B4BE84A248E717100D1CBE1 /* Products */,
+				3B4BE86C248F03A200D1CBE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +75,26 @@
 				3B4BE84C248E717100D1CBE1 /* AppDelegate.swift */,
 				3B4BE84E248E717100D1CBE1 /* SceneDelegate.swift */,
 				3B4BE850248E717100D1CBE1 /* ViewController.swift */,
+				3B4BE866248E8FB000D1CBE1 /* DetailViewController.swift */,
+				3B4BE868248EE40300D1CBE1 /* ArticleCell.swift */,
+				3B4BE864248E73C200D1CBE1 /* ArticleModel.swift */,
+				3B4BE862248E735E00D1CBE1 /* ArticleService.swift */,
+				3B4BE860248E719100D1CBE1 /* Article.swift */,
+				3B4BE86A248EFC6700D1CBE1 /* CacheManager.swift */,
 				3B4BE852248E717100D1CBE1 /* Main.storyboard */,
 				3B4BE855248E717300D1CBE1 /* Assets.xcassets */,
 				3B4BE857248E717300D1CBE1 /* LaunchScreen.storyboard */,
 				3B4BE85A248E717300D1CBE1 /* Info.plist */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		3B4BE86C248F03A200D1CBE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B4BE86D248F03A200D1CBE1 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4BE869248EE40300D1CBE1 /* ArticleCell.swift in Sources */,
+				3B4BE863248E735E00D1CBE1 /* ArticleService.swift in Sources */,
+				3B4BE861248E719100D1CBE1 /* Article.swift in Sources */,
 				3B4BE851248E717100D1CBE1 /* ViewController.swift in Sources */,
 				3B4BE84D248E717100D1CBE1 /* AppDelegate.swift in Sources */,
+				3B4BE865248E73C200D1CBE1 /* ArticleModel.swift in Sources */,
 				3B4BE84F248E717100D1CBE1 /* SceneDelegate.swift in Sources */,
+				3B4BE86B248EFC6700D1CBE1 /* CacheManager.swift in Sources */,
+				3B4BE867248E8FB000D1CBE1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DK2LDH6KJ;
 				INFOPLIST_FILE = NewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DK2LDH6KJ;
 				INFOPLIST_FILE = NewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
